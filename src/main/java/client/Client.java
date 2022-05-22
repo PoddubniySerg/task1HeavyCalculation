@@ -33,7 +33,7 @@ public class Client {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        interfase.printMessage("Клиент завершил работу");
+        interfase.printMessage(Thread.currentThread().getName() + " завершил работу");
     }
 
     private boolean inputIsInteger(String inputStr, IOInterfase interfase) {

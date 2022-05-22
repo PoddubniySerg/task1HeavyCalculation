@@ -30,6 +30,6 @@ public class MyServer {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println("Сервер завершил работу");
+        System.out.println(Thread.currentThread().getName() + " завершил работу");
     }
 }
